@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="utng.edu.mx.dialogosuno.MainActivity"
+    android:background="#000">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Toast"
+        android:id="@+id/btnToast"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialogo con Toast! :3"
+        android:id="@+id/lblToast"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@id/btnToast"
+        android:layout_alignBaseline="@id/btnToast" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Dialogo"
+        android:id="@+id/btnDialogo"
+        android:layout_below="@+id/btnToast"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialogo con Fragment! :3"
+        android:id="@+id/lblDialogo"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@id/btnDialogo"
+        android:layout_alignBaseline="@id/btnDialogo" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha :3"
+        android:onClick="showDatePickerDialog"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialogo con Fecha! :3"
+        android:id="@+id/lblFecha"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@id/btn1"
+        android:layout_alignBaseline="@id/btn1" />
+
+</RelativeLayout>

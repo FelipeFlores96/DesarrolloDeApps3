@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="mx.edu.utng.acelerometro.MainActivity">
+
+    <!-- Sensor Name -->
+
+    <TextView
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="22sp"
+        android:id="@+id/sensorNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:text="Sensor " />
+
+    <TextView
+        android:id="@+id/sensorNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/sensorNameLabel"
+        android:layout_toRightOf="@id/sensorNameLabel" />
+    <!-- End Sensor Name -->
+
+
+    <!-- Sensor Vendor -->
+
+    <TextView
+        android:layout_marginTop="22sp"
+        android:layout_marginLeft="40sp"
+        android:id="@+id/sensorVendorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensorNameLabel"
+        android:layout_marginBottom="5dp"
+        android:text="Aceleracion" />
+
+    <TextView
+
+        android:id="@+id/sensorVendorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/sensorVendorLabel"
+        android:layout_toRightOf="@id/sensorVendorLabel" />
+    <!-- End Sensor Vendor -->
+
+
+    <!-- Sensor Version -->
+
+    <TextView
+        android:layout_marginTop="22sp"
+        android:layout_marginLeft="40sp"
+        android:id="@+id/sensorVersionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensorVendorLabel"
+        android:layout_marginBottom="5dp"
+        android:text="Version" />
+
+    <TextView
+
+        android:id="@+id/sensorVersionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/sensorVersionLabel"
+        android:layout_toRightOf="@id/sensorVersionLabel" />
+    <!-- End Sensor Version -->
+
+
+    <!-- Sensor Power -->
+
+    <TextView
+        android:layout_marginTop="22sp"
+        android:layout_marginLeft="40sp"
+        android:id="@+id/sensorPowerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensorVersionLabel"
+        android:layout_marginBottom="5dp"
+        android:text="Potencia" />
+
+    <TextView
+        android:id="@+id/sensorPowerValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/sensorPowerLabel"
+        android:layout_toRightOf="@id/sensorPowerLabel" />
+    <!-- End Sensor Power -->
+
+
+    <!-- Sensor X -->
+
+    <TextView
+        android:layout_marginTop="22sp"
+        android:layout_marginLeft="40sp"
+        android:id="@+id/labelX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensorPowerLabel"
+        android:text="Eje X" />
+
+    <TextView
+
+        android:id="@+id/valueX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/labelX"
+        android:layout_toRightOf="@id/labelX" />
+    <!-- End SensorX -->
+
+
+    <!-- Sensor Y -->
+
+    <TextView
+        android:layout_marginTop="22sp"
+        android:layout_marginLeft="40sp"
+        android:id="@+id/labelY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelX"
+        android:text="Eje Y" />
+
+    <TextView
+        android:id="@+id/valueY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/labelY"
+        android:layout_toRightOf="@id/labelY" />
+    <!-- End Sensor Y -->
+
+
+    <!-- Sensor Z -->
+
+    <TextView
+        android:layout_marginTop="22sp"
+        android:layout_marginLeft="40sp"
+        android:id="@+id/labelZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelY"
+        android:text="Eje Z" />
+
+    <TextView
+        android:id="@+id/valueZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/labelZ"
+        android:layout_toRightOf="@id/labelZ"/>
+    <!-- End Sensor Z -->
+</RelativeLayout>
